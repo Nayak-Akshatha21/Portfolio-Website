@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- link file css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <img class="logo" src="img/f-removebg-preview.png" alt="" style="margin-top: 10px;">
+            <i id="btn-menu" class="fa-solid fa-bars"></i>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#Portfolio">Projects</a>
+                <a href="#Hobbies">Hobbies</a>
+                <a href="#Contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- start home sec -->
+    <div class="hero" id="home">
+        <div class="container">
+            <div class="content">
+                <h4>Hello, I'm</h4>
+                <h1>Akshatha</h1>
+                <p>Computer Science Engineer</p>
+                <a href="pdf/overleaf resume.pdf" class="btn">Download Resume</a>
+            </div>    
+        </div>
+    </div>
+
+    <!-- start about sec -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-img">
+                <!-- <img src="img/me.jpg" alt=""> -->
+            </div>
+            <div class="content">
+                <h1>About <span>Me</span></h1>
+                <h3>Front-End Developer</h3>
+                <p>I am a dedicated Computer Science Engineering student with a good understanding of programming languages such as C, Java, Python, and also HTML, CSS, and JavaScript. I have completed an internship in web development, where I gained practical experience in creating dynamic and responsive websites. I also have a basic knowledge of coding and problem-solving fundamentals, which I use to tackle challenges and develop efficient solutions. I am passionate about continuous learning and look forward to contributing to innovative projects in the tech industry.</p>
+                <div class="btns">
+                    <a href="pdf/overleaf resume.pdf" class="btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start Portfolio -->
+    <section id="Portfolio" class="portfolio">
+        <div class="container">
+            <div class="sec-top">
+                <h1><span>Projects</span></h1>
+            </div>
+            <div class="boxs">
+                <div class="box">
+                    <div class="box-hover">
+                        <span>IoT Simulations</span>
+                    </div>
+                    <img src="img/iot.avif" alt="">
+                    <h3><b>Internet Of Things</b></h3>
+                    <p>During my IoT internship, I learned the basics of IoT technology and how sensors and cloud platforms work. I gained hands-on experience with data collection and remote control of devices. I created simulations in Tinkercad to test and design various IoT applications.</p>
+                    <a href="https://www.tinkercad.com/dashboard/designs/circuits">IoT Simulations (Click here)</a>
+                </div>
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Portfolio Website</span>
+                    </div>
+                    <img src="img/portfolio.png" alt="">
+                    <h3><b>Personal Portfolio Website</b></h3>
+                    <p>This is my personal portfolio website. It showcases my skills. The website features an interactive interface. I created it during my internship to display my web development capabilities.</p>
+                </div>
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Smart Plate</span>
+                    </div>
+                    <img src="img/smart-plate.png" alt="">
+                    <h3><b>Smart plate for food identification, classification and calorie measurement.</b></h3>
+                    <p>Smart Plate identifies and classifies different types of food on your plate using image recognition. It measures the calories of the food items in real time and provides nutritional information based on the identified foods. This helps users manage their diet and make healthier food choices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start Hobbies -->
+    <section id="Hobbies" class="hobbies">
+        <div class="container">
+            <div class="sec-top">
+                <h1><span>Hobbies</span></h1>
+                <h2><span>Photography</span></h2>
+            </div>
+            <div class="boxs">
+                <div class="box">
+                    <div class="box-hover"></div>
+                    <img src="img/flower.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="box-hover"></div>
+                    <img src="img/sunset.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="box-hover"></div>
+                    <img src="img/watch.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="box-hover"></div>
+                    <img src="img/pink flower.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="box-hover"></div>
+                    <img src="img/sunset2.jpg" alt="">
+                </div>
+                
+                <div class="box">
+                    <div class="box-hover"></div>
+                    <img src="img/attur.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="box-hover"></div>
+                    <img src="img/sky.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start Contact -->
+    <section id="Contact" class="contact">
+        <div class="container">
+            <div class="sec-top">
+                <h1>Contact <span>Me</span></h1>
+            </div>
+            <form id="contactForm" onsubmit="return handleFormSubmit(event)">
+                <input type="text" placeholder="First Name" name="firstName" required>
+                <input type="text" placeholder="Last Name" name="lastName" required>
+                <input type="text" placeholder="Phone Number" name="phoneNumber" pattern="\d{10}" title="Phone number must be 10 digits" required>
+                <input type="email" placeholder="Email Address" name="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z.-]+$" title="Email must be in the format example@domain.com" required>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" minlength="4" required></textarea>
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+            <div class="success-message" id="successMessage">Sent successfully</div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for form submission and success message
+        function handleFormSubmit(event) {
+            event.preventDefault();  // Prevents the default form submission behavior
+
+            // Get form element
+            const form = document.getElementById('contactForm');
+
+            // Check if the form is valid
+            if (form.checkValidity()) {
+                const successMessage = document.getElementById('successMessage');
+                successMessage.style.display = 'block'; // Show success message
+                setTimeout(() => {
+                    successMessage.style.display = 'none'; // Hide after 3 seconds
+                }, 3000);
+                form.reset();  // Resets the form fields
+            } else {
+                // Display the default browser validation messages
+                form.reportValidity();
+            }
+
+            return false;  // Prevents the default form submission
+        }
+    </script>
+
+    <script src="main.js"></script>
+</body>
+</html>
